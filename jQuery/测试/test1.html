@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 'abc'
+        let arr = [0, 1];
+        console.log(arr instanceof Array);
+        console.log([1, 2].constructor === Array);
+
+        function add() {}
+        console.log(typeof(add));
+    </script>
+    <!-- <script>
+        Object.prototype.toString.call('An') // "[object String]"
+        Object.prototype.toString.call(1) // "[object Number]"
+        Object.prototype.toString.call(Symbol(1)) // "[object Symbol]"
+        Object.prototype.toString.call(null) // "[object Null]"
+        Object.prototype.toString.call(undefined) // "[object Undefined]"
+        Object.prototype.toString.call(function() {}) // "[object Function]"
+        Object.prototype.toString.call({
+                name: 'An'
+            }) // "[object Object]"
+        console.log(Object.prototype.toString.call([0, 1]));
+    </script> -->
+    <!-- <script>
+        let arr = [1, 2, 3];
+        class Person {
+            constructor() {
+                this.name = 'ysx'
+            }
+        }
+        let person = new Person();
+        let obj = new Object();
+        console.log(Object.prototype.toString.call(arr));
+        console.log(person.toString());
+        console.log(obj.toString());
+    </script> -->
+    <!-- <script>
+        'use strict'
+
+        function test() {
+            var y = 10;
+            eval('var x = 10;return x');
+            return x;
+        }
+        console.log(test());
+    </script> -->
+    <!-- <script>
+        'use strict'
+        let arr = [0, 1];
+        let string = "ysx";
+        let num = 10;
+
+        function show(arr, string, num) {
+            console.log(string === arguments[1]);
+            arr.push(2);
+            string += 'lxy';
+            num += 10;
+            console.log(string);
+            console.log(arguments[1] == string);
+            return arguments;
+        }
+        console.log(show(arr, string, num));
+        console.log(arr, string, num);
+    </script> -->
+</body>
+
+</html>

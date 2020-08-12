@@ -1,0 +1,14 @@
+$bgcolor: skyblue;
+$textcolor: #333;
+$fontsize: 30px;
+$fontfamily: "微软雅黑";
+$count:12;
+$border_width:2px;
+$border_color1:#ff9999;
+$border_color2:red;
+$border_style:solid;
+$border: $border_width $border_style $border_color1;
+* {
+    padding: 0;
+    margin: 0;
+}

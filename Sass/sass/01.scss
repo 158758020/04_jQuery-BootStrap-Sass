@@ -1,0 +1,46 @@
+@import 'common/01';
+body {
+    background-color: $bgcolor;
+    color: $textcolor;
+    font-size: $fontsize;
+    font-family: $fontfamily;
+    line-height: #{$count}px;
+    div {
+        width: 200px;
+        height: 200px;
+        border: $border;
+        &:hover {
+            border: {
+                width: 5px;
+                color: $border_color2;
+                style: solid;
+            }
+        }
+    }
+}
+
+@mixin border($size, $style:solid, $color:#000) {
+    border: $size $style $color;
+}
+
+div {
+    @include border(1px, $color: #f00000);
+}
+
+@for $i from 1 through 3 {
+    .pic#{$i} {
+        background-position: 0 -#{$i * 10 - 10}
+    }
+}
+
+$imgSrc:(01 02 03);
+.img#{nth($imgSrc,1)} {
+    background-image: url('img/#{nth($imgSrc, 1)}.png');
+}
+
+$imgSrc: ( width: 2px,
+style: solid,
+color: #ccc);
+p {
+    border: map-get($imgSrc, width) map-get($imgSrc, style) map-get($imgSrc, color)
+}

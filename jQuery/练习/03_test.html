@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='../jquery-1.12.4.js'></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #ff9999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='div'></div>
+    <span>span</span>
+
+    <script>
+        $(function() {
+            // $('div').click(function() {
+            //     let id = $(this).attr('id');
+            //     $(`<p>我是p标签,属于${id}</p>`).appendTo(this);
+            //     $('p').click(function() {
+            //         $(this).remove();
+            //     })
+            // })
+            $('span').on('mouseenter mouseleave', function(e) {
+                if (e.type == 'mouseenter') {
+                    $('span').css('color', 'white');
+                } else {
+                    $('span').css('color', 'black');
+                }
+            })
+            $(document).keypress(function(e) {
+                console.log(e.keyCode);
+                console.log(e.which);
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src='jquery-1.12.4.js'></script>
+    <script src='bootstrap.min.js'></script>
+    <style>
+        body {
+            height: 2000px;
+            padding-top: 42px;
+        }
+        
+        .nav.nav-tabs.nav-pills {
+            background-color: #fff;
+        }
+        
+        .nav .active a {
+            background-color: #ff6666!important;
+        }
+        
+        .caption p:last-of-type {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <ul class="nav nav-tabs nav-pills tab-content navbar navbar-default navbar-fixed-top">
+            <li role="presentation" class="active "><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Character</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="img/yingyan.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary w-75" role="button">Character Info</a> <a href="#" class="w-75 btn btn-default" role="button">Relationships</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 选项卡菜单-->
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>
+        <li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>
+        <li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>
+        <li><a href="#security" role="tab" data-toggle="tab">安全</a></li>
+        <li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>
+    </ul>
+    <!-- 选项卡面板 -->
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane active" id="bulletin">公告内容面板</div>
+        <div class="tab-pane " id="rule">规则内容面板</div>
+        <div class="tab-pane " id="forum">论坛内容面板</div>
+        <div class="tab-pane " id="security">安全内容面板</div>
+        <div class="tab-pane " id="welfare">公益内容面板</div>
+    </div>
+    <script>
+        $(function() {
+            $('.nav li').on('click', function(e) {
+                $('.nav li').removeClass('active');
+
+                $(this).addClass('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
